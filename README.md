@@ -22,4 +22,6 @@ Prof. Anderson is asking us to create a new repo on GitHub and take notes in Mar
 Data Lifecycle
   - Question -> Collection -> Generation -> Clean-up -> Storage -> Processing/Analysis -> Query/Visualization --
   - Curation/Triage - How long data will be around, Triage is prioratizing of a situation,  
+Http/Html
+  - http request - Request -> Response -> Recycle 
 
