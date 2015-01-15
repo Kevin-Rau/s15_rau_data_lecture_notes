@@ -1,5 +1,5 @@
 # s15_rau_data_lecture_notes
-##Class Website cu-data-engineering-s15
+##Class Website: https://github.com/cu-data-engineering-s15/syllabus/wiki
 
 ##Lecture Notes for Data Engineering Spring 2015
 
