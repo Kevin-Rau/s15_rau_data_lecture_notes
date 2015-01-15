@@ -1,8 +1,9 @@
 # s15_rau_data_lecture_notes
+##Class Website cu-data-engineering-s15
 
 ##Lecture Notes for Data Engineering Spring 2015
 
-##Lecture 1
+##Lecture 1/12/15
 
 Prof. Anderson is asking us to create a new repo on GitHub and take notes in Markdown. 
 
@@ -24,4 +25,6 @@ Data Lifecycle
   - Curation/Triage - How long data will be around, Triage is prioratizing of a situation,  
 Http/Html
   - http request - Request -> Response -> Recycle 
+
+##Lecture 1/15/15
 
