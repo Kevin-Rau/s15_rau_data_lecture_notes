@@ -51,6 +51,52 @@ Web Servers
   - /users |GET -> READ | POST -> CREATE | PUT -> UPDATE | DELETE -> DESTROY |  
   - get /users - information on all users
   - get users/id - information on particular user
+  - 
+ 
+###Lecture 1/20/15 
+
+REST
+ - Invented by Roy Fielding 
+ - Architectual style for web services
+ - Approach to developing web services that mimics the web itself
+ - Service provides access to a linked set of resources
+ - For each resources you can perform operations on it similar to the mainoperations (methods) of the HTTP specification
+ - Rest Operations, for each resource you can typically perform CRUD operations
+
+Discussion
+  - Each operation may produce a result
+    - With RESTful services, JSON format is king (Java Script Object Notation) 
+  - POST and Put methods typically send data
+    - Maybe in  URL or in the body of the HTTP Request
+    - May be in the URL or the body of the HTTP request in the JSON format.
+      - For GET, data may appear as query params
+  - Other forms are possible:HTML and XML are typical
+  - If a request needs to be authenticated
+    - the authenication data appears in HTTP headers
+
+Discussion 2
+  - How are operations handles on two resources?
+    - /users/0 and /possessions/1 or /2 or /3 ....ect
+    - /users/0/possessions - operations on two resources
+    - "create new comment on post zero" POST /api/1.0/posts/0/comments 
+    - another approach is to perfrom an operaton on one resource, you can reference the other one by id in the data that is sent with that request
+
+Issues
+  - Security: How do you authenticate users?
+  - Identity: How are ids assigned to resources
+  - Failure: How do we handle failure interuptions
+    - in example this lecture it is handled in JSON
+    - could have used HTTP status codes (404, 500, ect) like GET user 20, respond with Status Codes if not there
+    - Most services are handled with both 
+  - Persistance: How are resources stored? 
+
+Example
+  - Contacts Web Service
+  - Implemented in both Ruby and Javascript
+  - Tehcn used
+    - Sinatra
+    - Rspec
+    - Typoeus
+    - Node
+    - Express
   
-
-
