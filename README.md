@@ -99,4 +99,12 @@ Example
     - Typoeus
     - Node
     - Express
-  
+
+###Lecture 1/27/15
+
+Node.JS
+  - http provides a function called createServer()
+  - It takes a function that implements the servers behavior 
+  - createServer() returns an object with a method listen()
+    - it accepts ther servers network behavior
+    - 
