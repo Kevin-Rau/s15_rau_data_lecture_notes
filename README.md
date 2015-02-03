@@ -106,5 +106,32 @@ Node.JS
   - http provides a function called createServer()
   - It takes a function that implements the servers behavior 
   - createServer() returns an object with a method listen()
-    - it accepts ther servers network behavior
-    - 
+    - it accepts the servers network behavior
+  -Example(Demo in class) 
+  
+###Lecture 2/2/15
+  - Angular.js 
+    - is a client -side web application framework written in javascricpt for use in most web servers
+    - has implementation of model view controller in the web browser to make it easier to make modular web clients
+    - not the easiest learning curve
+    - but very powerful!
+    - just learn its core concepts and idioms - learning version 1.3
+    - Core concepts
+      - Data bindings
+      - value of an HTML tag can be associated with a model object. When ones changes, Angular updates other autom
+      - Controllers
+      - Controllers are associated with portion of your HTML and define all states and methods that can be acessed in that page
+      - With controllers can modularize page
+      - Services
+      - controllers are used to manage data for some portion of a page while it is displayed. as you move from mage to page they will come and go out of existing 
+      - can make a service to keep the state of controllers
+      - Directives - umbiquitous in Angular; primary use is to allow Angular to intergrate in HTML in natural way
+      - Also can be used to create reusable componentes that combine controllers, data and Html
+      - Embeddable - Angular can control as little or as much of a webpage as you specify
+      - Injectable - "dependancy injection" - declare independancies upfront
+      - Modules - is primary way to package up a set of controllers in Angular
+      - can create a module with no dependancies, and handle on it
+      - once you have a mod defined in javascript, can tell angular where is lives
+      - to actullay do something in angular you need to create a module
+    - Demonstration 
+
