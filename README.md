@@ -135,3 +135,9 @@ Node.JS
       - to actullay do something in angular you need to create a module
     - Demonstration 
 
+###Lecture 2/5/15
+
+Demonstration 
+  - Angular runs in the browser - Node runs the platform - express is a framework that runs on top of node. 
+  - Node is middleware based, rails is basically middleware as well. 
+  - 
