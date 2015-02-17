@@ -140,4 +140,25 @@ Node.JS
 Demonstration 
   - Angular runs in the browser - Node runs the platform - express is a framework that runs on top of node. 
   - Node is middleware based, rails is basically middleware as well. 
-  - 
+   
+###Lecture 10-12
+  - Demonstration
+  
+###Lecture 2/17/15
+  
+  - using the twitter_framwork files on Github
+  - TwitterRequest 
+    - Standardized constructor
+    - params that go on request
+    - data that is needed by the request
+  - The Contract
+    - Subclasses may provide implementations of:
+      - error: method that handles failed requests
+  - Logging
+      - Creates a logger, if nothing makes a default logger. 
+  - Rates
+    - && variable is a class variable in Ruby
+  - MaxIdRequest 
+    - Traversing the timeline
+  
+  
