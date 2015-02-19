@@ -146,7 +146,7 @@ Demonstration
   
 ###Lecture 2/17/15
   
-  - using the twitter_framwork files on Github
+Using the twitter_framwork files on Github
   - TwitterRequest 
     - Standardized constructor
     - params that go on request
@@ -161,4 +161,59 @@ Demonstration
   - MaxIdRequest 
     - Traversing the timeline
   
+###Lecture 2/19/15
+
+NoSql
+  - Web Analytics
+    - lets lost of requests come in then batch to the database
+    - but once again there are too many requests to handle, can try and add more workers to the the queue
+    - still can be inefficeint because they all bottleneck on a one database
+    - can solve with vertical scaling, but takes money. 
+    - in vertical scaling you can also put a cache before the database to save accessed variables
+    - can also SHARED the database - have multiple copies of the database - partition across the database
+    - problems are is this is an application level concern, have to manage the number of shards
+    - if you make a mistake with the sharding then you have to fix it, if one thing goes down it all goes down
+    - humans are the final problem
+    - not a crashing bug, just a bug that writes the wrong data in some way
+  - NoSql
+    - NoSql databases are aware of their distributed nature
+    - horizontally scalable
+    - does the sharding for you
+    - tends to avoid mutable databases
+    - cant lose correct data because once it is written it is immutable and cant be updated
+    - option to go back in time and get an old value
+    - the databases are fault tolerant 
+    - relation database is row-stored - if you need to change multiple columns, one row is stored in same place
+  - Key-Value - simple database that when presented with a key is returns an abritrarily large set of data
+    - act like hash tables
+    - values are untyped, can store any type of data in these databases
+    - its simple! examples: Amazon SimpleDB, Redis, Voldemort, Riak
+  - Graph Stores
+    - databases that are optimized to store graoh structues rather can table/row/column structues
+    - have structural query languages so you can locate information bases on the stucture of your data
+    - have ability to traverse the graph efficently
+    - have ability to fine the shortest path between two nodes
+    - ex. find pairs of Person nodes who have at least three children, live in colorado, married more than 15 years
+    - Neo4j, Titan
+  - Columnar Stores
+    - Aka Column Family Stores
+    - Can scale enormous amounts of data
+    - can achieve very fast writes (milliseconds) .. while also keeing reasonable read performance
+    - Column Family - think of as a table of related data
+    - Column familes consist of rows that have unique row keys
+    - Rows consist of columns
+    - Columns consist of a key and a value
+    - hash tables all the way down
+    - Ex. Cassandra, HBase
+  - Document Stores
+    - key-value store but with more structure
+    - you insert documents
+    - each document gets indexed in a variety of ways
+    - documents can be found via queries on any attribute
+    - Documents grouped into collections, collections into databases
+    - each database is then used by a partiular application to get its work done
+    - Ex. MongoDB, CouchDB, Solr/Lucene
+ - Why NoSql?
+  - no scheme
+  - no types, you can store whatever you want
   
