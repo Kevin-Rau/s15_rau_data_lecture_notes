@@ -217,3 +217,39 @@ NoSql
   - no scheme
   - no types, you can store whatever you want
   
+###Lecture 2/24/15
+
+CouchDB
+  - What is it 
+    - Stores documents 
+    - Self-contained data
+  - Cap Theorem
+    - There are problems when desinging a database when you have one or more server running
+    - Issues are, consitency, availability, partition tolerance
+    - Cap therom states. pick any two
+  - Choices
+    - Consistency and Availability - relational databases - low partition tolerance
+    - Availability and Partition Tolerance - ability to scale horiz and always be available for requests, but only gurantee eventual consistency 
+    - Consistency an Partition Tolerance - consistency across multiple databases, but not always be available for client requests 
+  - Where the magic happens
+    - Couch makes use of B-Tree storage engine
+      - automatic sorting: allow searches, insertions, and deletions to occur in logarithmis time
+    - Employs MapReduce over this B-tree to compute views of data, allowing for parallel and incremental computation
+    - No Locking
+      - Runs under the assumption that there are lots of copies of the database
+      - can go in and change documents as much as you wont and not lock them across servers
+      - returns a document that was the latest when the read started
+      - new version of the document can be written while a read occurs; the next read will return the new document.
+    - Validation: Can be written in Javascript for a particular class of document
+     - can choose or deny an update to the document when it is submitted, to ensure no bad data is inserted 
+     - Merge Conflicts
+      - These can happen
+      - brew install couchdb
+    - Crud opperations are supported
+    - Updataing a document
+      - When working with a document, use this worlfow
+        - Read the entire document
+          - provides you with the rev_id
+        - Change it
+        - Store the updated document
+        - 
