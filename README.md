@@ -252,4 +252,19 @@ CouchDB
           - provides you with the rev_id
         - Change it
         - Store the updated document
-        - 
+
+###Lecture 2/26/15
+
+MongoDB
+  - History - mid 2007 10gen began working on (PaaS) users wanted their database tech.
+  - many companies use MongoDB, written in C++, no fixed schema
+  - is a document-based database 
+  - documents is a set of keys and values
+  - implemented as B-Trees
+  - No multi-document atomic transactions are supported
+  - Document is the most basic element in mongo, equivalent to a row in a relational database 
+  - Cannot have duplicate tags
+  - When to use:
+    - Makes sense for medical records, some patients can have lost of data
+    - read heavey enviorments
+    - 
