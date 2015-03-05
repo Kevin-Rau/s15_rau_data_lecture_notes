@@ -267,4 +267,21 @@ MongoDB
   - When to use:
     - Makes sense for medical records, some patients can have lost of data
     - read heavey enviorments
-    - 
+  
+###Lecture 3/5/15
+
+MongoDB Continued
+  - Importing tweets
+    - input file is JSON objects
+    - Name of database: data
+    - name of collection: tweets
+    - use mongo Rub gem for accessing MongoDB
+  - Connecting to Mongo
+    - Include Mongo - import mongo module
+    - mongo = MongoClient.new - Connection to mongoDB
+    - db = mongo.db('data') = get a handle to the database
+    - tweets = db['tweets'] get a handler to the tweets
+    - one more thing
+  - Running MongoBD
+    - mongod --config /usr/local/etc/mongod.conf
+    - to launch mongo client just type in 'mongo'
