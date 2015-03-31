@@ -285,3 +285,13 @@ MongoDB Continued
   - Running MongoBD
     - mongod --config /usr/local/etc/mongod.conf
     - to launch mongo client just type in 'mongo'
+
+###Lecture 3/31/15
+
+Presntations
+  - Grpahing presentation on Neo4J
+    - uses nodes and edges
+    - Consistency
+    - ACID compliant
+    - 
+  
