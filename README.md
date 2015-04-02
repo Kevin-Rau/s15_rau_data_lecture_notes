@@ -293,5 +293,10 @@ Presntations
     - uses nodes and edges
     - Consistency
     - ACID compliant
-    - 
+  
+###Lecture 4/2/15
+
+Presentations 
+  - Riak
+  - Cassandra 
   
